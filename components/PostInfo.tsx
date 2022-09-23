@@ -19,7 +19,7 @@ export default function PostInfo(
                 category={category}
                 title={title}
                 date={date}
-                center
+                center={false}
             />
             <p className="text-white/60 mt-4 w-10/12">
                 {shortDescription}

@@ -14,11 +14,11 @@ export default function Navbar(){
             <nav className="py-10">
                 <Container>
                     <div className="flex items-center">
-                        <div className="w-4/12 flex items-center">
+                        <div className="w-3/12 flex items-center">
                             <div className="w-10 h-10 bg-gray-500 rounded flex items-center justify-center mr-4 shadow-2xl">E</div>
                             EpicCetus
                         </div>
-                        <div className="w-8/12">
+                        <div className="w-6/12">
                             <ul className="space-x-14 flex items-center">
                                 <li>
                                     <a href="#" className="hover:underline">UI Design</a>
@@ -53,7 +53,7 @@ export default function Navbar(){
                                 </li>
                             </ul>
                         </div>
-                        <div className="w-2/12">
+                        <div className="w-3/12">
                             <input
                                 type="text"
                                 className="bg-gray-700 py-2 px-6 w-full bg-search rounded-full pl-10"

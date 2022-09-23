@@ -10,7 +10,7 @@ export default function Detail(){
                 <div className="md:w-8/12 w-full mx-auto flex items-center flex-col">
                     <PostMetaTitle
                         category="UI Design"
-                        title="How to design a product that can grow your bussines"
+                        title="How to design a product that can grow your business"
                         date="July 23, 2022"
                         center={true}
                     />
@@ -31,7 +31,7 @@ export default function Detail(){
                         Usually you start with understanding the problem. You follow that with the exploration of ideas that could solve said problem. And ultimately this leads to discovering a solution.
                     </p>
                     <p className="lg:text-xl text-md">
-                        Once you have a solution, you put it out there and you monitor it, so you can learn and feed another cycle of understanding > exploring > materializing.
+                        Once you have a solution, you put it out there and you monitor it, so you can learn and feed another cycle of understanding &gt; exploring &gt; materializing.
                     </p>
                 </div>
             </Container>
