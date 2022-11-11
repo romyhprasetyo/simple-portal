@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PostInfo from "@/components/PostInfo";
 export default function FeaturedPost(){
     return(
@@ -5,7 +6,11 @@ export default function FeaturedPost(){
             <div className="container mx-auto">
                 <div className="flex -mx-6 flex-wrap">
                     <div className="px-6 lg:w-8/12 md:w-7/12 w-full">
-                        <img src="/featured-thumbnail.png" className="rounded-2xl w-full h-full object-cover" alt=""/>
+                        <Link href="/detail">
+                            <a>
+                                <img src="/featured-thumbnail.png" className="rounded-2xl w-full h-full object-cover" alt=""/>
+                            </a>
+                        </Link>
                     </div>
                     <div className="lg:w-4/12 md:w-5/12 px-6">
                         <PostInfo

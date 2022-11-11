@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 interface PostMetaTitleProps {
     category:string,
     date:string,
@@ -14,7 +16,9 @@ export default function PostMetaTitle({category, title, date, center} : PostMeta
                     {date}
                 </div>
             </div>
-            <h2 className={`text-lg mt-4 ${center ? 'text-center' : ''}`}>{title}</h2>
+            <h2 className={`text-lg mt-4 ${center ? 'text-center' : ''}`}>
+                <Link href="/detail"><a>{title}</a></Link>
+            </h2>
         </>
     );
 }

@@ -4,11 +4,15 @@ import CardPost from "@/components/CardPost";
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
 import mockPosts from "@/utils/posts.json"
+import Head from "next/head";
 
 export default function Post(){
     const [posts, setPosts] = useState(mockPosts);
     return(
        <Layout>
+           <Head>
+               <title>Posts &mdash; Epicestus</title>
+           </Head>
            <Container>
                <SectionHeader pageTitle="UI Design"/>
                {!posts.length ? (

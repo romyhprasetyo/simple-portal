@@ -1,4 +1,5 @@
 import {useState} from "react";
+import Head from "next/head";
 import FeaturedPost from "@/components/FeaturedPost";
 import CardPost from "@/components/CardPost";
 import Container from "@/components/Container";
@@ -9,6 +10,9 @@ export default function Home(){
     const [posts, setPosts] = useState(mockPosts);
     return(
         <Layout>
+            <Head>
+                <title>Home &mdash; Epicestus</title>
+            </Head>
             <Container>
                 <FeaturedPost/>
                 <div className="flex -mx-4 flex-wrap mt-6">

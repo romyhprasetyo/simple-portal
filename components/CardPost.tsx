@@ -1,10 +1,15 @@
+import Link from "next/link";
 import PostInfo from "@/components/PostInfo";
 
 // @ts-ignore
 export default function CardPost({thumbnail, ...postInfo}){
     return(
         <article>
-            <img src={thumbnail} className="rounded w-full" alt=""/>
+            <Link href="/detail">
+                <a>
+                    <img src={thumbnail} className="rounded w-full" alt=""/>
+                </a>
+            </Link>
             <PostInfo
                 category={""}
                 date={""}
